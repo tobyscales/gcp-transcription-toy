@@ -1,3 +1,13 @@
+#### Based on python samples available at https://github.com/googleapis/python-speech ####
+
+## to setup a virtual python environment for this script:
+# git clone https://github.com/googleapis/python-speech .
+# cd python-speech
+# pip install virtualenv
+# virtualenv gcp-transcription-toy
+# source gcp-transcription-toy/bin/activate
+# pip install -r requirements.txt
+
 export PROJECT=##YOUR PROJECT NAME HERE##
 export REGION=us-central1
 
@@ -16,8 +26,6 @@ gcloud config set project $PROJECT
 gcloud services enable speech.googleapis.com
 
 ## TO CONFIGURE AND RUN PYTHON SCRIPT AUTOMATICALLY,
-## UNCOMMENT THESE LINES
-# virtualenv gcp-speech
-# source gcp-speech/bin/activate
-# pip install -r requirements.txt
+## UNCOMMENT THIS LINE
 # python3 ./transcribe.py $TYPE 
+
